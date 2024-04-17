@@ -1,4 +1,4 @@
-package com.anda.admin.controller;
+package com.anda.controller;
 
 import com.anda.common.util.AjaxResult;
 import org.springframework.web.bind.annotation.GetMapping;

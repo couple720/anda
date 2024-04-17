@@ -1,4 +1,4 @@
-package com.anda.admin;
+package com.anda;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

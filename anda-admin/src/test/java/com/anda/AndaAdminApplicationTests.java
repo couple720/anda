@@ -1,4 +1,4 @@
-package com.anda.admin;
+package com.anda;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
