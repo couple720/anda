@@ -14,11 +14,11 @@
     <artifactId>anda</artifactId>
     <version>1.1.1</version>
 
-    <name>anda1</name>
-    <description>anda2</description>
+    <name>anda</name>
+    <description>anda</description>
 
     <modules>
-        <module>anda-api</module>
+        <module>anda-admin</module>
     </modules>
 
     <profiles>

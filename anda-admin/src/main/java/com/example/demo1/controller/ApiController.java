@@ -1,7 +1,7 @@
 package com.example.demo1.controller;
 
-import com.example.demo1.entity.AdminMenuEntity;
 import com.example.demo1.dao.AdminMenuMapper;
+import com.example.demo1.entity.AdminMenuEntity;
 import com.example.demo1.util.AjaxResult;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
