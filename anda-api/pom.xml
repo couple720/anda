@@ -4,15 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.example</groupId>
-        <artifactId>demo</artifactId>
+        <groupId>com.anda</groupId>
+        <artifactId>anda</artifactId>
         <version>1.1.1</version>
     </parent>
 
-    <artifactId>demo1</artifactId>
+    <artifactId>anda-api</artifactId>
+    <version>1.1.1</version>
 
-    <name>demo1</name>
-    <description>demo1</description>
+    <name>anda-api</name>
+    <description>anda-api2</description>
 
     <properties>
         <java.version>17</java.version>

@@ -10,15 +10,15 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.anda</groupId>
+    <artifactId>anda</artifactId>
     <version>1.1.1</version>
 
-    <name>Java</name>
-    <description>Java</description>
+    <name>anda1</name>
+    <description>anda2</description>
 
     <modules>
-        <module>demo1</module>
+        <module>anda-api</module>
     </modules>
 
     <profiles>
