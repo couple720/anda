@@ -7,10 +7,10 @@
         <version>1.1.1</version>
     </parent>
 
-    <artifactId>admin-common</artifactId>
+    <artifactId>anda-common</artifactId>
     <packaging>jar</packaging>
 
-    <name>admin-common</name>
+    <name>anda-common</name>
     <url>http://maven.apache.org</url>
 
     <properties>
