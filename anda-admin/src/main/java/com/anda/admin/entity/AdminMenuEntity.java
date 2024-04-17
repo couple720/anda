@@ -1,4 +1,4 @@
-package com.example.demo1.entity;
+package com.anda.admin.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

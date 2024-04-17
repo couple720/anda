@@ -1,6 +1,6 @@
-package com.example.demo1.dao;
+package com.anda.admin.dao;
 
-import com.example.demo1.entity.AdminMenuEntity;
+import com.anda.admin.entity.AdminMenuEntity;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.annotations.Mapper;

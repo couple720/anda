@@ -19,6 +19,7 @@
 
     <modules>
         <module>anda-admin</module>
+        <module>admin-common</module>
     </modules>
 
     <profiles>

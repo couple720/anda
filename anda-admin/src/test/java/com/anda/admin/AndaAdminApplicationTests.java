@@ -1,10 +1,10 @@
-package com.example.demo1;
+package com.anda.admin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Demo1ApplicationTests {
+class AndaAdminApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,6 +1,6 @@
-package com.example.demo1.repo;
+package com.anda.admin.repo;
 
-import com.example.demo1.entity.AdminMenuEntity;
+import com.anda.admin.entity.AdminMenuEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
