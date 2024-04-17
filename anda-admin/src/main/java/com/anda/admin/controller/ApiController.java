@@ -1,7 +1,7 @@
 package com.anda.admin.controller;
 
 import com.anda.admin.entity.AdminMenuEntity;
-import com.anda.admin.util.AjaxResult;
+import com.anda.common.util.AjaxResult;
 import com.anda.admin.dao.AdminMenuMapper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;

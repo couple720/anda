@@ -20,6 +20,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.anda</groupId>
+            <artifactId>admin-common</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>

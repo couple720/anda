@@ -1,4 +1,4 @@
-package com.anda.admin.util;
+package com.anda.common.util;
 
 import java.util.Collections;
 

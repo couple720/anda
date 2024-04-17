@@ -55,7 +55,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <demo.version>1.1.1</demo.version>
+        <anda.version>1.1.1</anda.version>
         <java.version>17</java.version>
         <pagehelper.version>2.1.0</pagehelper.version>
     </properties>
@@ -73,6 +73,11 @@
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.anda</groupId>
+                <artifactId>admin-common</artifactId>
+                <version>${anda.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
