@@ -19,6 +19,7 @@
 
     <modules>
         <module>anda-admin</module>
+        <module>anda-api</module>
         <module>anda-common</module>
     </modules>
 
