@@ -19,7 +19,8 @@ class Handler extends \support\exception\Handler
         $code = $exception->getCode();
         // ajax请求返回json数据
         if ($request->expectsJson()) {
-            return json(['code' => $code ? $code : 500, 'msg' => $exception->getMessage()]);
+            // return json(['code' => $code ? $code : 500, 'msg' => $exception->getMessage()]);
+            return ajax_result(500, $exception->getMessage() ?: '服务器内部错误');
         }
         // 页面请求返回500.html模版
         return view('500', ['exception' => $exception], '')->withStatus(500);

@@ -12,8 +12,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-use support\view\Raw;
+use support\view\Blade;
 
 return [
-    'handler' => Raw::class
+    // 'handler' => Raw::class
+    'handler' => Blade::class
 ];

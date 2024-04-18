@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controller;
+namespace app\admin\controller;
 
 use support\Request;
 use support\Response;
@@ -11,5 +11,4 @@ class IndexController
     {
         return view('index');
     }
-
 }

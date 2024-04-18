@@ -18,13 +18,29 @@ use Webman\Route;
 
 Route::any('/', [app\controller\IndexController::class, 'index']);
 
+// 加载默认路由配置
+require_once app_path('config/route.php');
+
+// 加载admin应用下的路由配置
+Route::group('/admin', function () {
+    require_once app_path('admin/config/route.php');
+});
+
+// 加载api应用下的路由配置
+Route::group('/api', function () {
+    require_once app_path('api/config/route.php');
+});
+
+// 错误路由
 Route::fallback(function (Request $request) {
     // ajax请求时返回json
     if ($request->expectsJson()) {
-        return json(['code' => 404, 'msg' => '404 not found']);
+        // return json(['code' => 404, 'msg' => '404 not found']);
+        return ajax_result(404, '404 not found');
     }
     // 页面请求返回404.html模版
-    return view('404', ['error' => 'some error'])->withStatus(404);
+    return view('404')->withStatus(404);
 });
 
+// 禁止默认路由
 Route::disableDefaultRoute();
