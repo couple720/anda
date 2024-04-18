@@ -3,27 +3,12 @@
 namespace app\controller;
 
 use support\Request;
-use support\Response;
 
 class IndexController
 {
-    public function index(Request $request)
+    public function index(Request $request): string
     {
-        static $readme;
-        if (!$readme) {
-            $readme = file_get_contents(base_path('README.md'));
-        }
-        return $readme;
-    }
-
-    public function view(Request $request): Response
-    {
-        return view('index/view', ['name' => 'webman']);
-    }
-
-    public function json(Request $request): Response
-    {
-        return json(['code' => 0, 'msg' => 'ok']);
+        return 'hello world';
     }
 
 }
