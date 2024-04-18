@@ -4,20 +4,20 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "e436326dc0a2f23b10a19a2f94aa57c7",
+  "content-hash": "4990b46a9062bfca9b236b74fa04d94c",
   "packages": [
     {
-      "name": "carbonphp/carbon-doctrine-types",
-      "version": "3.2.0",
+      "name": "brick/math",
+      "version": "0.12.1",
       "source": {
         "type": "git",
-        "url": "https://github.com/CarbonPHP/carbon-doctrine-types.git",
-        "reference": "18ba5ddfec8976260ead6e866180bd5d2f71aa1d"
+        "url": "https://github.com/brick/math.git",
+        "reference": "f510c0a40911935b77b86859eb5223d58d660df1"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/18ba5ddfec8976260ead6e866180bd5d2f71aa1d",
-        "reference": "18ba5ddfec8976260ead6e866180bd5d2f71aa1d",
+        "url": "https://api.github.com/repos/brick/math/zipball/f510c0a40911935b77b86859eb5223d58d660df1",
+        "reference": "f510c0a40911935b77b86859eb5223d58d660df1",
         "shasum": "",
         "mirrors": [
           {
@@ -29,11 +29,77 @@
       "require": {
         "php": "^8.1"
       },
+      "require-dev": {
+        "php-coveralls/php-coveralls": "^2.2",
+        "phpunit/phpunit": "^10.1",
+        "vimeo/psalm": "5.16.0"
+      },
+      "type": "library",
+      "autoload": {
+        "psr-4": {
+          "Brick\\Math\\": "src/"
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "description": "Arbitrary-precision arithmetic library",
+      "keywords": [
+        "Arbitrary-precision",
+        "BigInteger",
+        "BigRational",
+        "arithmetic",
+        "bigdecimal",
+        "bignum",
+        "bignumber",
+        "brick",
+        "decimal",
+        "integer",
+        "math",
+        "mathematics",
+        "rational"
+      ],
+      "support": {
+        "issues": "https://github.com/brick/math/issues",
+        "source": "https://github.com/brick/math/tree/0.12.1"
+      },
+      "funding": [
+        {
+          "url": "https://github.com/BenMorel",
+          "type": "github"
+        }
+      ],
+      "time": "2023-11-29T23:19:16+00:00"
+    },
+    {
+      "name": "carbonphp/carbon-doctrine-types",
+      "version": "2.1.0",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/CarbonPHP/carbon-doctrine-types.git",
+        "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/CarbonPHP/carbon-doctrine-types/zipball/99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
+        "reference": "99f76ffa36cce3b70a4a6abce41dba15ca2e84cb",
+        "shasum": "",
+        "mirrors": [
+          {
+            "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+            "preferred": true
+          }
+        ]
+      },
+      "require": {
+        "php": "^7.4 || ^8.0"
+      },
       "conflict": {
-        "doctrine/dbal": "<4.0.0 || >=5.0.0"
+        "doctrine/dbal": "<3.7.0 || >=4.0.0"
       },
       "require-dev": {
-        "doctrine/dbal": "^4.0.0",
+        "doctrine/dbal": "^3.7.0",
         "nesbot/carbon": "^2.71.0 || ^3.0.0",
         "phpunit/phpunit": "^10.3"
       },
@@ -63,7 +129,7 @@
       ],
       "support": {
         "issues": "https://github.com/CarbonPHP/carbon-doctrine-types/issues",
-        "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/3.2.0"
+        "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.0"
       },
       "funding": [
         {
@@ -79,7 +145,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2024-02-09T16:56:22+00:00"
+      "time": "2023-12-11T17:09:12+00:00"
     },
     {
       "name": "doctrine/inflector",
@@ -530,6 +596,85 @@
       "time": "2024-01-15T18:52:32+00:00"
     },
     {
+      "name": "illuminate/database",
+      "version": "v10.48.4",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/illuminate/database.git",
+        "reference": "0f003d7970b966d3bccf407876fe83cac35ebe67"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/illuminate/database/zipball/0f003d7970b966d3bccf407876fe83cac35ebe67",
+        "reference": "0f003d7970b966d3bccf407876fe83cac35ebe67",
+        "shasum": "",
+        "mirrors": [
+          {
+            "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+            "preferred": true
+          }
+        ]
+      },
+      "require": {
+        "brick/math": "^0.9.3|^0.10.2|^0.11|^0.12",
+        "ext-pdo": "*",
+        "illuminate/collections": "^10.0",
+        "illuminate/container": "^10.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/macroable": "^10.0",
+        "illuminate/support": "^10.0",
+        "php": "^8.1"
+      },
+      "conflict": {
+        "carbonphp/carbon-doctrine-types": ">=3.0",
+        "doctrine/dbal": ">=4.0"
+      },
+      "suggest": {
+        "doctrine/dbal": "Required to rename columns and drop SQLite columns (^3.5.1).",
+        "ext-filter": "Required to use the Postgres database driver.",
+        "fakerphp/faker": "Required to use the eloquent factory builder (^1.21).",
+        "illuminate/console": "Required to use the database commands (^10.0).",
+        "illuminate/events": "Required to use the observers with Eloquent (^10.0).",
+        "illuminate/filesystem": "Required to use the migrations (^10.0).",
+        "illuminate/pagination": "Required to paginate the result set (^10.0).",
+        "symfony/finder": "Required to use Eloquent model factories (^6.2)."
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "10.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Illuminate\\Database\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Taylor Otwell",
+          "email": "taylor@laravel.com"
+        }
+      ],
+      "description": "The Illuminate Database package.",
+      "homepage": "https://laravel.com",
+      "keywords": [
+        "database",
+        "laravel",
+        "orm",
+        "sql"
+      ],
+      "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+      },
+      "time": "2024-03-12T02:39:22+00:00"
+    },
+    {
       "name": "illuminate/events",
       "version": "v10.48.4",
       "source": {
@@ -716,6 +861,62 @@
       "time": "2023-06-05T12:46:42+00:00"
     },
     {
+      "name": "illuminate/pagination",
+      "version": "v10.48.4",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/illuminate/pagination.git",
+        "reference": "b42a851e037984e38f8964d1a96d15b0302bebfc"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/illuminate/pagination/zipball/b42a851e037984e38f8964d1a96d15b0302bebfc",
+        "reference": "b42a851e037984e38f8964d1a96d15b0302bebfc",
+        "shasum": "",
+        "mirrors": [
+          {
+            "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+            "preferred": true
+          }
+        ]
+      },
+      "require": {
+        "ext-filter": "*",
+        "illuminate/collections": "^10.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/support": "^10.0",
+        "php": "^8.1"
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "10.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Illuminate\\Pagination\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Taylor Otwell",
+          "email": "taylor@laravel.com"
+        }
+      ],
+      "description": "The Illuminate Pagination package.",
+      "homepage": "https://laravel.com",
+      "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+      },
+      "time": "2024-01-12T17:17:46+00:00"
+    },
+    {
       "name": "illuminate/pipeline",
       "version": "v10.48.4",
       "source": {
@@ -768,6 +969,66 @@
         "source": "https://github.com/laravel/framework"
       },
       "time": "2023-12-19T14:47:26+00:00"
+    },
+    {
+      "name": "illuminate/redis",
+      "version": "v10.48.4",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/illuminate/redis.git",
+        "reference": "8a438aa70f4bf48973dfe8de9af3ad91cc5361a7"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/illuminate/redis/zipball/8a438aa70f4bf48973dfe8de9af3ad91cc5361a7",
+        "reference": "8a438aa70f4bf48973dfe8de9af3ad91cc5361a7",
+        "shasum": "",
+        "mirrors": [
+          {
+            "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+            "preferred": true
+          }
+        ]
+      },
+      "require": {
+        "illuminate/collections": "^10.0",
+        "illuminate/contracts": "^10.0",
+        "illuminate/macroable": "^10.0",
+        "illuminate/support": "^10.0",
+        "php": "^8.1"
+      },
+      "suggest": {
+        "ext-redis": "Required to use the phpredis connector (^4.0|^5.0).",
+        "predis/predis": "Required to use the predis connector (^2.0.2)."
+      },
+      "type": "library",
+      "extra": {
+        "branch-alias": {
+          "dev-master": "10.x-dev"
+        }
+      },
+      "autoload": {
+        "psr-4": {
+          "Illuminate\\Redis\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Taylor Otwell",
+          "email": "taylor@laravel.com"
+        }
+      ],
+      "description": "The Illuminate Redis package.",
+      "homepage": "https://laravel.com",
+      "support": {
+        "issues": "https://github.com/laravel/framework/issues",
+        "source": "https://github.com/laravel/framework"
+      },
+      "time": "2024-01-03T14:02:53+00:00"
     },
     {
       "name": "illuminate/support",
@@ -2533,6 +2794,95 @@
         }
       ],
       "time": "2023-12-26T14:02:43+00:00"
+    },
+    {
+      "name": "symfony/var-dumper",
+      "version": "v7.0.4",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/symfony/var-dumper.git",
+        "reference": "e03ad7c1535e623edbb94c22cc42353e488c6670"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e03ad7c1535e623edbb94c22cc42353e488c6670",
+        "reference": "e03ad7c1535e623edbb94c22cc42353e488c6670",
+        "shasum": "",
+        "mirrors": [
+          {
+            "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+            "preferred": true
+          }
+        ]
+      },
+      "require": {
+        "php": ">=8.2",
+        "symfony/polyfill-mbstring": "~1.0"
+      },
+      "conflict": {
+        "symfony/console": "<6.4"
+      },
+      "require-dev": {
+        "ext-iconv": "*",
+        "symfony/console": "^6.4|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0",
+        "symfony/process": "^6.4|^7.0",
+        "symfony/uid": "^6.4|^7.0",
+        "twig/twig": "^3.0.4"
+      },
+      "bin": [
+        "Resources/bin/var-dump-server"
+      ],
+      "type": "library",
+      "autoload": {
+        "files": [
+          "Resources/functions/dump.php"
+        ],
+        "psr-4": {
+          "Symfony\\Component\\VarDumper\\": ""
+        },
+        "exclude-from-classmap": [
+          "/Tests/"
+        ]
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Nicolas Grekas",
+          "email": "p@tchwork.com"
+        },
+        {
+          "name": "Symfony Community",
+          "homepage": "https://symfony.com/contributors"
+        }
+      ],
+      "description": "Provides mechanisms for walking through any arbitrary PHP variable",
+      "homepage": "https://symfony.com",
+      "keywords": [
+        "debug",
+        "dump"
+      ],
+      "support": {
+        "source": "https://github.com/symfony/var-dumper/tree/v7.0.4"
+      },
+      "funding": [
+        {
+          "url": "https://symfony.com/sponsor",
+          "type": "custom"
+        },
+        {
+          "url": "https://github.com/fabpot",
+          "type": "github"
+        },
+        {
+          "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+          "type": "tidelift"
+        }
+      ],
+      "time": "2024-02-15T11:33:06+00:00"
     },
     {
       "name": "vlucas/phpdotenv",
