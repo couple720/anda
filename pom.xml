@@ -21,6 +21,7 @@
         <module>anda-admin</module>
         <module>anda-api</module>
         <module>anda-common</module>
+        <module>anda-dao</module>
     </modules>
 
     <profiles>
